@@ -1,0 +1,3 @@
+2021-05-23 19:29:03,292 - log4jdemo -INFO - Chrome driver gets opened
+2021-05-23 19:29:05,754 - log4jdemo -INFO - its opening posbytz app
+2021-05-23 19:29:05,940 - log4jdemo -INFO - application gets closed

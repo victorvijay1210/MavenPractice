@@ -14,8 +14,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class bootstrapdropdown {
 	
 	
-	@Test
-public void bootstrap() {
+
+public  static void main(String[] args) {
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
@@ -29,7 +29,7 @@ public void bootstrap() {
 		   
 		   System.out.println(ele.getAttribute("innerHTML"));
 		   
-		   if(ele.getAttribute("innerHTML").contains("JavaScript")) {
+		   if(ele.getAttribute("innerHTML").contentEquals("HTML")) {
 			   
 			   ele.click();
 		   }

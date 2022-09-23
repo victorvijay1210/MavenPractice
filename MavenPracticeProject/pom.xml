@@ -27,8 +27,9 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>3.141.59</version>
+    <version>4.4.0</version>
 </dependency>
+
 <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
 <dependency>
     <groupId>org.apache.maven.plugins</groupId>

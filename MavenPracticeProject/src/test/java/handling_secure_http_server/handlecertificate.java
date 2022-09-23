@@ -22,9 +22,9 @@ public class handlecertificate {
 	
 		WebDriverManager.chromedriver().setup();
 		
-		WebDriver driver = new ChromeDriver(cap);
+		//WebDriver driver = new ChromeDriver(cap);
 		
-		driver.get("https://www.cacert.org/");
+		//driver.get("https://www.cacert.org/");
 	}
 
 }

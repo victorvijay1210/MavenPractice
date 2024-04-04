@@ -12,7 +12,6 @@ public class windowshandles {
 	
 	public static void main(String[] args) {
 		
-		WebDriverManager.chromedriver().setup();
 		
 		WebDriver driver = new ChromeDriver();
 		

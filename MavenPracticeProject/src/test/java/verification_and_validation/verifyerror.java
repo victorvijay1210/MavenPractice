@@ -16,7 +16,6 @@ public class verifyerror {
 	@Test
 public void verify() {
 	
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://pos.smartbytz.com/");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS );

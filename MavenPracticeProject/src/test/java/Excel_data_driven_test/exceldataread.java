@@ -13,7 +13,7 @@ public class exceldataread {
 		
 		XSSFWorkbook wb;
 		try {
-			File fis = new File("C:\\Users\\vijay\\git\\MavenPractice\\MavenPracticeProject\\Excel_Sheet\\TestData_Sheet.xlsx");
+			File fis = new File("C:\\Users\\hp\\eclipse-workspace\\MavenPractice\\MavenPracticeProject\\Excel_Sheet\\TestData_Sheet.xlsx");
 
 			FileInputStream fo = new FileInputStream(fis);
 			

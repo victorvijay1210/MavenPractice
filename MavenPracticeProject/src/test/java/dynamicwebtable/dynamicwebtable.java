@@ -18,7 +18,6 @@ public class dynamicwebtable {
 	@Test
 	public static void handlingwebtable() throws Exception {
 		
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://pos.smartbytz.com/account/login?next=/sale/report/sales-summary/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

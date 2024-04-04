@@ -13,7 +13,6 @@ public class handleauthpopup {
 		
 		
 		
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         // navigate to AUT URL

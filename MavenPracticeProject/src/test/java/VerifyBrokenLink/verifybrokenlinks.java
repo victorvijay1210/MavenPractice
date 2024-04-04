@@ -17,7 +17,6 @@ public class verifybrokenlinks {
 	
 	public static void main(String[] args) 
 	{
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		
 		driver.manage().window().maximize();
@@ -38,7 +37,7 @@ public class verifybrokenlinks {
 			verifyLinkActive(url);
 			
 		}
-		
+		driver.close();
 	}
 	
 	public static void verifyLinkActive(String linkUrl)

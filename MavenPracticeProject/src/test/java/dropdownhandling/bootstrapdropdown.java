@@ -17,7 +17,6 @@ public class bootstrapdropdown {
 
 public  static void main(String[] args) {
 		
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://seleniumpractise.blogspot.com/2016/08/bootstrap-dropdown-example-for-selenium.html");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);

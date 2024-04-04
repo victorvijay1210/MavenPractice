@@ -20,7 +20,6 @@ public class handlecertificate {
 		
 		cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 	
-		WebDriverManager.chromedriver().setup();
 		
 		//WebDriver driver = new ChromeDriver(cap);
 		

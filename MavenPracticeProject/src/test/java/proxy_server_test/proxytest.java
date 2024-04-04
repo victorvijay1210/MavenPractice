@@ -19,7 +19,6 @@ public class proxytest {
 		p.setHttpProxy("localhot:8888");
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(CapabilityType.PROXY, p);
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://www.charlesproxy.com/");
 		System.out.println(driver.getCurrentUrl());

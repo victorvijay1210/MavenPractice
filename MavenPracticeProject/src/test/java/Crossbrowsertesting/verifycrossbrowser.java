@@ -18,13 +18,11 @@ public class verifycrossbrowser {
 		
 		if(browsername.equalsIgnoreCase("FireFox")) {
 			
-			WebDriverManager.firefoxdriver().setup();
 			driver= new FirefoxDriver();			
 		}
 		
 		else if(browsername.equalsIgnoreCase("Chrome")) {
 			
-			WebDriverManager.chromedriver().setup();
 			 driver = new ChromeDriver();
 		}
 		

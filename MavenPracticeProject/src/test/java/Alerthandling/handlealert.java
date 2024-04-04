@@ -15,7 +15,6 @@ public class handlealert {
 	@Test
 	public void alerthandle() {
 		
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.seleniumeasy.com/test/javascript-alert-box-demo.html");
 		driver.manage().window().maximize();

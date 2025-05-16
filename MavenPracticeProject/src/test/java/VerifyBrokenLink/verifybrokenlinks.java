@@ -51,7 +51,6 @@ public class verifybrokenlinks {
            
            if(httpURLConnect.getResponseCode()==200)
            {
-        	   Assert.assertTrue(true);
                System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage());
             }
           if(httpURLConnect.getResponseCode()==HttpURLConnection.HTTP_NOT_FOUND)  

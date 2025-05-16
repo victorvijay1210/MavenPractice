@@ -1,4 +1,4 @@
-package LatestFearure;
+package LatestFeature;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

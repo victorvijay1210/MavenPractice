@@ -1,5 +1,6 @@
 package wait;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -17,7 +18,7 @@ public static void main (String[] args) {
 	WebDriverManager.firefoxdriver().setup();	
 	WebDriver driver = new FirefoxDriver();
 	driver.get("https://learn-automation.com/handle-multiple-windows-in-selenium-webdriver/");
-	driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
+	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(3));
 	
 }
 

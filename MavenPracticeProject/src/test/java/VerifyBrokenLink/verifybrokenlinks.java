@@ -4,14 +4,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class verifybrokenlinks {
 	
 	
@@ -32,7 +29,7 @@ public class verifybrokenlinks {
 			
 			WebElement ele= links.get(i);
 			
-			String url=ele.getAttribute("href");
+			String url=ele.getDomAttribute("href");
 			
 			verifyLinkActive(url);
 			
@@ -54,10 +51,12 @@ public class verifybrokenlinks {
            
            if(httpURLConnect.getResponseCode()==200)
            {
+        	   Assert.assertTrue(true);
                System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage());
             }
           if(httpURLConnect.getResponseCode()==HttpURLConnection.HTTP_NOT_FOUND)  
            {
+        	  Assert.assertTrue(false);
                System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage() + " - "+ HttpURLConnection.HTTP_NOT_FOUND);
             }
         } catch (Exception e) {
